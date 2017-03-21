@@ -5,6 +5,9 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% if page.music %}
+  <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="/audio/{{page.music}}">你的浏览器不支持audio标签</audio>
+  {% endif %}
   {{ content }}
 </div>
 {% include comment.html %}

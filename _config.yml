@@ -27,3 +27,6 @@ duoshuo_shortname: daniely
 
 # analytics
 google_analytics_id: UA-94099121-1
+
+# excerpt
+excerpt_separator: "\n\n"
