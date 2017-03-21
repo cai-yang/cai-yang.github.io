@@ -38,7 +38,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: "Myriad Pro", Myriad, PingFangSC-Light, "微软雅黑", Optima, sans-serif;
+  font-family: "Myriad Pro", Myriad, PingFangSC-Ultralight, "微软雅黑", Optima, sans-serif;
 }
 
 html {
@@ -336,7 +336,16 @@ a.sidebar-nav-item:focus {
 .post-title {
   margin-top: 0;
 }
-
+.post-category,
+.post-category{
+  display: block;
+  color: #9a9a9a;
+  text-align: center;
+  font-size:14px;
+}
+.post-category a{
+  color: #9a9a9a;
+}
 /* Meta data line below post title */
 .post-date {
   display: block;
