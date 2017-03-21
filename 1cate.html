@@ -1,31 +1,26 @@
 ---
-layout: default
-title: 首页
+layout: page
+title: 文章分类
+permalink: /cate
 ---
-
 <div class="posts">
-  {% for post in site.posts %}
+  {% for cate in site.categories %}
+  <h1 class="post-category" style="text-align: left; margin-top: 20px">{{ cate.first }}</h1>
+  <hr>
+  {% for post in cate.last %}
   <div class="post">
     {% if post.category %}
-    <span class="post-category">
-      <a href="{{ site.baseurl }}{{ post.category }}">
-        {{ post.category }}
-      </a>
-    </span>
     {% endif %}
-    <h1 class="post-title">
-
+    <h1 class="post-title" style="text-align: left; font-size: 20px">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
+      </a>
 
-    </h1>
+<span class="" style="color: #9a9a9a; font-size: 12px">{{ post.date | date_to_string }}</span>
+</h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.excerpt }}
-    <span class="post-date" style="text-align: left"><a href="{{ site.baseurl }}{{ post.url }}" style="color: #9a9a9a;">Read more --></a><span>
-    <br>
-    <br>
   </div>
+  {% endfor %}
   {% endfor %}
 </div>
 
