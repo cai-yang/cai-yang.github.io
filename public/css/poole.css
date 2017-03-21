@@ -48,13 +48,14 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Myriad Pro", Myriad, PingFangSC-Light, "微软雅黑", "微软雅黑",, Optima, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -150,11 +151,12 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  /*font-family: Menlo, Monaco, "Courier New", monospace;*/
+  font-family: "Myriad Pro", Myriad, PingFangSC-Light, "微软雅黑", "微软雅黑",, Optima, sans-serif;
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
+  font-size: 16px;
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
