@@ -23,7 +23,7 @@ author:
 version:             1.0.0
 
 # comments
-duoshuo_shortname: daniely
+duoshuo_shortname:
 
 # analytics
 google_analytics_id: UA-94099121-1
