@@ -24,7 +24,7 @@ title: 首页
 
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} by {{post.author}}</span>
 
     {{ post.excerpt }}
     <span class="post-date" style="text-align: left"><a href="{{ site.baseurl }}{{ post.url }}" style="color: #9a9a9a;">Read more --></a><span>
