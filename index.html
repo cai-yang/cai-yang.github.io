@@ -6,13 +6,18 @@ title: 首页
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-    {% if post.category %}
+
+
     <span class="post-category">
-      <a href="{{ site.baseurl }}{{ post.category }}">
-        {{ post.category }}
+      {% for cate in post.categories %}
+      <a href="{{ site.baseurl }}/cate/#{{ cate }}">
+        {{ cate }}
       </a>
+      &nbsp
+        {% endfor %}
     </span>
-    {% endif %}
+
+
     <h1 class="post-title">
 
         {{ post.title }}
