@@ -3,6 +3,7 @@ date = '2025-07-15T13:43:49+08:00'
 draft = false
 title = '测试文章'
 description = "看看就是了"
+{{ $image := $image.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
 featured_image = '/images/View_from_Shanghai_bund_at_night.jpg'
 +++
 

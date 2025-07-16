@@ -22,3 +22,8 @@ weight = 1
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[imaging]
+  anchor = 'Smart'
+  resampleFilter = 'CatmullRom'
+  quality = 75
