@@ -6,12 +6,12 @@ theme = 'diary'
 
 [[menu.main]]
 url = "/categories"
-name = "Categories"
+name = "分类 Categories"
 weight = 3
 
 [[menu.main]]
 url = "/tags"
-name = "Tags"
+name = "标签 Tags"
 weight = 2
 
 [[menu.main]]
