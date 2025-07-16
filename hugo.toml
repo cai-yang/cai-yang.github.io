@@ -4,7 +4,7 @@ defaultContentLanguage = "zh-cn"
 # 网站标题
 title = "小杨X空间"
 
-theme = 'LoveIt'
+theme = 'loveit'
 
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
