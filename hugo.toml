@@ -18,3 +18,7 @@ weight = 2
 url = "/posts"
 name = "归档 Archive"
 weight = 1
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
