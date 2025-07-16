@@ -1,0 +1,20 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-Hans'
+DefaultContentLanguage = "zh"
+title = '小杨X空间'
+theme = 'diary'
+
+[[menu.main]]
+url = "/categories"
+name = "Categories"
+weight = 3
+
+[[menu.main]]
+url = "/tags"
+name = "Tags"
+weight = 2
+
+[[menu.main]]
+url = "/posts"
+name = "归档 Archive"
+weight = 1
