@@ -1,7 +1,6 @@
 baseURL = 'https://example.org/'
 
 defaultContentLanguage = "zh-cn"
-
 # 网站标题
 title = "小杨X空间"
 
@@ -10,19 +9,20 @@ theme = 'stack'
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "zh-CN"
 
+[menu]
 [[menu.main]]
 url = "/categories"
-name = "分类 Categories"
+name = "分类"
 weight = 3
 
 [[menu.main]]
 url = "/tags"
-name = "标签 Tags"
+name = "标签"
 weight = 2
 
 [[menu.main]]
 url = "/posts"
-name = "归档 Archive"
+name = "归档"
 weight = 1
 
 [caches]
@@ -33,3 +33,11 @@ weight = 1
   anchor = 'Smart'
   resampleFilter = 'CatmullRom'
   quality = 75
+
+[params]
+  mainSections = "posts"
+  rssFullContent = false
+  [params.footer]
+    since = "2025"
+  [params.sidebar]
+    subtitle = "胡言乱语"
