@@ -4,11 +4,12 @@ draft = false
 title = '测试文章'
 description = "看看就是了"
 author = "小杨"
+image = "my-pic.jpg"
 +++
-
 ## 这是什么？
 
 这是一个博客，记录一些我的个人想法。
+
 
 ```java
 // 这是一段java代码

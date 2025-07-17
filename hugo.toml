@@ -1,13 +1,11 @@
 baseURL = 'https://example.org/'
 
-defaultContentLanguage = "zh-cn"
 # 网站标题
 title = "小杨X空间"
-
 theme = 'stack'
 
-# 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
 
 [menu]
 [[menu.main]]
@@ -26,18 +24,115 @@ name = "归档"
 weight = 1
 
 [caches]
+  [caches.getjson]
+    dir = ':cacheDir/getjson'
+    maxAge = '1h'
+  [caches.getcsv]
+    dir = ':cacheDir/getcsv'
+    maxAge = '1h'
   [caches.images]
     dir = ':cacheDir/images'
+    maxAge = '1h'
+  [caches.assets]
+    dir = ':cacheDir/assets'
+    maxAge = '1h'
+  [caches.modules]
+    dir = ':cacheDir/modules'
+    maxAge = '1h'
 
 [imaging]
   anchor = 'Smart'
   resampleFilter = 'CatmullRom'
-  quality = 75
+  quality = 70
+  hint = 'photo'
+  bgColor = '#ffffff'
+
+# 永久链接配置
+# [permalinks]
+#  posts = "/p/:slug/"
+
+# 输出格式（搜索功能需要）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   mainSections = "posts"
   rssFullContent = false
+  description = "胡言乱语"
+  favicon = "favicon.ico"
+
+  # 日期格式
+  [params.dateFormat]
+    published = "2006-01-02"
+    lastUpdated = "2006-01-02 15:04"
+
+  # 文章配置
+  [params.article]
+    math = true
+    toc = true
+    readingTime = true
+    license.enabled = true
+    license.default = "Licensed under CC BY-NC-SA 4.0"
+  
+  # 页脚配置
   [params.footer]
-    since = "2025"
+    since = 2025
+    customText = "不要停下对世界的探索和对生活的热爱"
+  
+  # 侧边栏配置
   [params.sidebar]
+    compact = false
+    emoji = "🥺"
     subtitle = "胡言乱语"
+    avatar.enabled = true
+    avatar.local = true
+    avatar.src = "img/avatar.jpg"
+    
+  # 图片处理配置
+  [params.imageProcessing]
+    cover.enabled = true
+    content.enabled = true
+
+  # SEO配置
+  [params.opengraph]
+    defaultImage.enabled = true
+    defaultImage.local = true
+    defaultImage.src = "img/og-image.png"
+  
+  # 搜索配置
+  [params.search]
+    enabled = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = "搜索文章"
+    thumbnailHeight = 120
+
+  [params.widgets]
+    [[params.widgets.page]]
+      type = "toc"
+    [[params.widgets.homepage]]
+      type = "search"
+    [[params.widgets.homepage]]
+      type = "archives"
+
+# SEO优化
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# 社交媒体配置
+[social]
+  twitter = "your_twitter_handle"
+  github = "your_github_username"
+
+# 作者信息
+[author]
+  name = "小杨"
+  email = "your_email@example.com"
+  link = "https://your-website.com"
+
+# RSS配置
+[services]
+  [services.rss]
+    limit = 20
