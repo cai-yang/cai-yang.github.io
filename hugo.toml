@@ -10,18 +10,13 @@ hasCJKLanguage = true
 [menu]
 [[menu.main]]
 url = "/categories"
-name = "分类"
+name = "分类 - Categories"
 weight = 3
 
 [[menu.main]]
 url = "/tags"
-name = "标签"
+name = "标签 - Tags"
 weight = 2
-
-[[menu.main]]
-url = "/posts"
-name = "归档"
-weight = 1
 
 [caches]
   [caches.getjson]
