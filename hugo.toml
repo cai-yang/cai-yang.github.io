@@ -120,3 +120,5 @@ hasCJKLanguage = true
 [services]
   [services.rss]
     limit = 20
+  [services.googleAnalytics]
+    id = 'G-XBRBDVRJGD'
