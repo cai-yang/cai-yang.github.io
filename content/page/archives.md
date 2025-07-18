@@ -5,6 +5,6 @@ slug = "archives"
 [menu]
 [menu.main]
   weight = -70
-  [params] 
+  [menu.main.params] 
   icon = "archives"
 +++

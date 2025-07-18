@@ -7,17 +7,6 @@ theme = 'stack'
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
 
-[menu]
-[[menu.main]]
-url = "/categories"
-name = "分类 - Categories"
-weight = 3
-
-[[menu.main]]
-url = "/tags"
-name = "标签 - Tags"
-weight = 2
-
 [caches]
   [caches.getjson]
     dir = ':cacheDir/getjson'
@@ -53,7 +42,7 @@ weight = 2
 [params]
   mainSections = "posts"
   rssFullContent = false
-  description = "胡言乱语"
+  description = "曾经是一个疯狂加班的程序员，在躺平半年后体验到了WLB的滋味，正在想办法维持该状态；"
   favicon = "favicon.ico"
 
   # 日期格式
@@ -77,8 +66,8 @@ weight = 2
   # 侧边栏配置
   [params.sidebar]
     compact = false
-    emoji = "🥺"
-    subtitle = "胡言乱语"
+    emoji = "🫠"
+    subtitle = "曾经是一个疯狂加班的程序员，在躺平半年后体验到了WLB的滋味，正在想办法维持该状态；"
     avatar.enabled = true
     avatar.local = true
     avatar.src = "img/avatar.jpg"
