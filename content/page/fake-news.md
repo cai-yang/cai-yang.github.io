@@ -5,4 +5,4 @@ title = "8岁少年家中沉迷编程写下这个网站第一行代码，现已�
 散了，都散了，没有这种事情，纯假新闻。
 
 
-[返回阅读](/posts/my-first-post)
+[返回阅读](/posts/talk-on-the-internet)
