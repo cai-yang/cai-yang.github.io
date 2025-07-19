@@ -6,6 +6,7 @@ theme = 'stack'
 
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
+relativeURLs = true
 
 [caches]
   [caches.getjson]
